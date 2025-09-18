@@ -2,6 +2,8 @@
 
 Code for a tiny synthesizer built with an ESP32, running the Mozzi library. It's simple, compact, and powerful.
 
+You can find the info of the Hardware here :https://www.pcbway.com/project/shareproject/ESP32_Mozzi_synthesizer_3a3e8f1a.html
+
 ## Project Overview
 
 This project implements a versatile drum machine and synthesizer using the ESP32 microcontroller and the Mozzi audio synthesis library. The codebase includes multiple implementations showcasing different audio output methods and feature sets, from basic internal DAC output to advanced web-controlled drum machines with external DACs.
