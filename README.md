@@ -8,6 +8,8 @@ You can find the info of the Hardware here :https://www.pcbway.com/project/share
 
 This project implements a versatile drum machine and synthesizer using the ESP32 microcontroller and the Mozzi audio synthesis library. The codebase includes multiple implementations showcasing different audio output methods and feature sets, from basic internal DAC output to advanced web-controlled drum machines with external DACs.
 
+![KiCad 3D Rendering](./kicad_3d_rendering.png)
+
 ## Folder Structure
 
 ### `platformio/drum_internal_dac/`
