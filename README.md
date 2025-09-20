@@ -25,6 +25,9 @@ Web-controlled drum machine with external DAC and modern web interface:
 - Real-time step sequencer with retro Mac-style UI
 - Connect to `DrumMachine-AP` WiFi and visit `http://192.168.4.1`
 
+![Web UI Screenshot 01](./web_ui_01.png)
+![Web UI Screenshot 02](./web_ui_02.png)
+
 ## Getting Started
 
 1. Install [PlatformIO](https://platformio.org/) for VS Code
