@@ -15,9 +15,13 @@ Basic drum machine implementation using ESP32's built-in 8-bit DAC for audio out
 
 ### `platformio/drum_external_dac/`
 Basic drum machine implementation using ESP32's external DAC for audio output.
+![Synthesizer Editting UI](./synthesizer_editing.jpg)
 
 ### `platformio/drum_external_dac_long_music/`
 Drum machine with external DAC support for higher quality audio output and playing long music.
+![Long music in action](./long_music.jpg)
+![Long music close-up 01](./long_music_close_up_01.jpg)
+![Long music close-up 02](./long_music_close_up_02.jpg)
 
 ### `platformio/drum_external_dac_web/`
 Web-controlled drum machine with external DAC and modern web interface:
