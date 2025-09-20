@@ -22,7 +22,11 @@ Basic drum machine implementation using ESP32's external DAC for audio output.
 ### `platformio/drum_external_dac_long_music/`
 Drum machine with external DAC support for higher quality audio output and playing long music.
 ![Long music in action](./long_music.jpg)
+
+Wave form UI
 ![Long music close-up 01](./long_music_close_up_01.jpg)
+
+Drum tracks
 ![Long music close-up 02](./long_music_close_up_02.jpg)
 
 ### `platformio/drum_external_dac_web/`
@@ -31,7 +35,10 @@ Web-controlled drum machine with external DAC and modern web interface:
 - Real-time step sequencer with retro Mac-style UI
 - Connect to `DrumMachine-AP` WiFi and visit `http://192.168.4.1`
 
+Drum pads
 ![Web UI Screenshot 01](./web_ui_01.png)
+
+Sequencer section
 ![Web UI Screenshot 02](./web_ui_02.png)
 
 ## Getting Started
