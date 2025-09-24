@@ -1,5 +1,7 @@
 # esp32-mozzi-synthesizer-code
 
+[![Watch the video](https://img.youtube.com/vi/AfLHgAreUpU/0.jpg)](https://www.youtube.com/watch?v=AfLHgAreUpU)
+
 Code for a tiny synthesizer built with an ESP32, running the Mozzi library. It's simple, compact, and powerful.
 
 You can find the info of the Hardware here :https://www.pcbway.com/project/shareproject/ESP32_Mozzi_synthesizer_3a3e8f1a.html
