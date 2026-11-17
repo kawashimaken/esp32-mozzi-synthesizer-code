@@ -1,6 +1,12 @@
 # esp32-mozzi-synthesizer-code
 
-[![Watch the video](https://img.youtube.com/vi/AfLHgAreUpU/0.jpg)](https://www.youtube.com/watch?v=AfLHgAreUpU)
+<div align="center">
+  <div align="center">
+  <a href="https://youtu.be/AfLHgAreUpU" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/AfLHgAreUpU/maxresdefault.jpg" alt="Watch the video" width="800" />
+  </a>
+</div>
+</div>
 
 Code for a tiny synthesizer built with an ESP32, running the Mozzi library. It's simple, compact, and powerful.
 
