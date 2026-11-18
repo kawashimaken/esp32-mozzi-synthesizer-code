@@ -1,6 +1,17 @@
 #include "web_server.h"
 #include "web_ui.h"
 
+// WiFi credentials live in config_wifi.h, which is not committed.
+// Copy config_wifi.example.h to config_wifi.h and set AP_PASSWORD.
+#if __has_include("config_wifi.h")
+#include "config_wifi.h"
+#else
+#error "config_wifi.h not found: copy config_wifi.example.h to config_wifi.h and set AP_PASSWORD"
+#endif
+
+static_assert(sizeof(AP_PASSWORD) - 1 >= 8 && sizeof(AP_PASSWORD) - 1 <= 63,
+              "AP_PASSWORD in config_wifi.h must be 8 to 63 characters (WPA2)");
+
 // Declare external drum trigger functions from audio_engine.cpp
 extern void trigger_kick();
 extern void trigger_snare1();
@@ -94,11 +105,11 @@ void web_server_init() {
 
 void setup_wifi() {
   WiFi.mode(WIFI_AP);
-  WiFi.softAP("DrumMachine-AP", "drum1234");
+  WiFi.softAP(AP_SSID, AP_PASSWORD);
   
   Serial.println("WiFi Access Point started");
-  Serial.println("AP SSID: DrumMachine-AP");
-  Serial.println("Password: drum1234");
+  Serial.println("AP SSID: " AP_SSID);
+  Serial.println("Password: " AP_PASSWORD);
   Serial.print("AP IP address: ");
   Serial.println(WiFi.softAPIP());
   Serial.println("Connect to this network and visit http://192.168.4.1");

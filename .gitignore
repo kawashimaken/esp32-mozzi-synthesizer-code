@@ -1,0 +1,3 @@
+
+# WiFi credentials (copy config_wifi.example.h to config_wifi.h)
+config_wifi.h

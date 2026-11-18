@@ -42,6 +42,7 @@ Web-controlled drum machine with external DAC and modern web interface:
 - WiFi-enabled browser control
 - Real-time step sequencer with retro Mac-style UI
 - Connect to `DrumMachine-AP` WiFi and visit `http://192.168.4.1`
+- Before building, copy `src/config_wifi.example.h` to `src/config_wifi.h` and set your own `AP_PASSWORD` (8-63 characters). `config_wifi.h` is ignored by git, and the build stops if it is missing.
 
 Drum pads
 ![Web UI Screenshot 01](./web_ui_01.png)
