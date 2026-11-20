@@ -20,6 +20,10 @@ This project implements a versatile drum machine and synthesizer using the ESP32
 
 ## Folder Structure
 
+### `platformio/bluetooth_speaker/`
+Standalone Bluetooth A2DP speaker for a classic ESP32 and MAX98357A, converted from the Arduino sketch.
+See the [project README](platformio/bluetooth_speaker/README.md) for wiring and build instructions.
+
 ### `platformio/drum_internal_dac/`
 Basic drum machine implementation using ESP32's built-in 8-bit DAC for audio output.
 
