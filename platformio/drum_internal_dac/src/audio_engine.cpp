@@ -76,9 +76,15 @@ int audio_update() {
              envB2.next() * (aSqu2.next() >> 8) + 
              envB3.next() * (aSqu3.next() >> 8);
              
-  return ((code >> 2) + snare3.next() + snare4.next() + snap1.next() + 
-          kick9.next() + (hihat1.next()) + (hihat2.next()) + 
-          clap.next() + water1.next()) >> 2;
+  int mix = ((code >> 2) + snare3.next() + snare4.next() + snap1.next() +
+             kick9.next() + (hihat1.next()) + (hihat2.next()) +
+             clap.next() + water1.next()) >> 2;
+
+  // Master volume for the internal 8-bit DAC (100 = original level).
+  const int master_volume_percent = 50;
+  mix = mix * master_volume_percent / 100;
+  // Keep within the 8-bit DAC range so loud peaks clip instead of wrapping around.
+  return constrain(mix, -128, 127);
 }
 
 void drum_part() {
